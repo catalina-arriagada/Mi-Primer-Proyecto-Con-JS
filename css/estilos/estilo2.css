@@ -1,0 +1,48 @@
+label{
+	display: block;
+	margin-bottom: 10px;
+}
+input, select{
+	height: 30px;
+}
+.btn{
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    border: 0px solid #000000;
+}
+
+.btn-primary{
+	background-color: #0F9E09;
+	color: #fff;
+
+}
+.btn-primary:hover{
+	background-color: #9FC6F1;
+}
+.content-form{
+	width: 180%;
+	margin-left: 10%;
+
+}
+.form-control{
+	width: 100%;
+	
+}
+.form-group{
+	margin: 10px;
+
+}
+.text-danger{
+	color: #ED0E33;
+
+}
+.text-saludo{
+	color: #CB0404;
+	font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    font: small-caps 200%/50% serif;
+}

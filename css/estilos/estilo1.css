@@ -1,0 +1,135 @@
+footer{
+    float: left; 
+    width: 100%; 
+    margin-top: 40px;
+    background-color: #55CD4F;
+    height: 50px;
+    padding-bottom: 10px;
+    font-weight: bolder;
+}
+h3, h4{
+    font-weight: bold;
+    text-align: center;
+}
+h3{
+    font-size: 25px;
+    font: small-caps 200%/50% serif;
+}
+h4{
+    font-size: 20px;
+    color: #CB0404; 
+}
+header{
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #55CD4F;
+    height: 100px;
+    font-weight: bold;
+    color:#CB0404;
+}
+img{
+    width: 100%;
+    padding-top: 30px;
+}
+
+nav{
+	float: left;
+	width: 100%;
+	height: 30px;
+	padding-bottom: 30px;
+	background-color: #000000;
+}
+nav ul{
+	margin-left: 10px;
+}
+nav ul li{
+    text-align: center;
+    float: left;
+}
+nav ul li a{
+    text-decoration: none;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	font-size: 22px; 
+	color: #0F9E09;
+}
+	
+nav ul li a:hover{
+	color: #F91902;
+}
+.contenido{
+    width: 50%; 
+    float: left; 
+    margin-top: 30px;
+} 
+.img-about{
+    width: 100%;
+    float: left;
+    margin-right: 7px;
+    margin-bottom: 10px;
+}
+
+.text-footer{
+    margin: 20px;
+    color: #CB0404;
+}
+.text-about{
+    text-align: justify;
+    margin-top: : 20px;
+    margin-right: 20px;
+    padding-top: 50px;
+    color: #0F9E09;
+    font-weight: bold;
+}
+#veg:hover{
+    color: #000000;
+}
+.video-about{
+    margin-top: 100px;
+    padding-top: 200px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 480px) {
+    header{
+        font-size: 2rem;
+        letter-spacing: 0.7rem;
+    }
+    .contenido{
+        width: 100%; 
+        float: center; 
+    } 
+}
+@media only screen and (min-width: 481px) and (max-width:720px) {
+    header{
+        font-size: 3rem;
+        letter-spacing: 0.9rem;
+    }
+    .contenido{
+        width: 60%; 
+        float: left; 
+    } 
+}
+@media only screen and (min-width: 720px) and (max-width:1200px) {
+    header{
+        font-size: 3.2rem;
+        letter-spacing: 1.0rem;
+    }
+    .contenido{
+        width: 50%; 
+        float: left; 
+    } 
+}
+@media only screen  and (min-width:1201px) {
+    header{
+        font-size: 5rem;
+        letter-spacing: 1.3rem;
+    }
+    .contenido{
+        width: 50%; 
+        float: left; 
+    } 
+}

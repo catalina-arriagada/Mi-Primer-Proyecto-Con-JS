@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="utf-8">
+<title>Validador</title>
+
+<link rel="stylesheet" type="text/css" href="css/estilos/estilo1.css">
+<link rel="stylesheet" type="text/css" href="css/estilos/estilo2.css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+
+<script type="text/javascript">
+   $ (document).ready(function(){
+    $("#form").validate({
+       rules: {
+         nombre: {
+            required: true, 
+            minlength:5
+         },
+         email: {
+            required: true,
+            email: true,
+         },
+         fecha: {
+            required: true
+
+         },
+         comuna:{
+            required: true
+         },
+         comentarios: {
+            required: true,
+            minlength: 5,
+            maxlength: 50
+         },
+       },
+       messages:{
+         nombre:{
+            required: "El nombre es obligatoro"
+            minlength: "Debe ingresar al menos 5 caracteres"
+         },
+         email:{
+            required: "El email es obligatorio",
+            email: "El email es correcto"
+         },
+         numero:{
+            required: "El numero es obligatorio",
+            numero: "El numero es correcto"
+         },
+         fecha:{
+            required:"La fecha de nacimiento es obligatoria"
+         },
+         comuna:{
+            required: "Seleccione comuna"
+         },
+         producto:{
+            required: "Seleccione producto"
+         },
+         comentarios:{
+            required: "El comentario es obligatorio",
+            minlength: "Debe ingresar al menos 5 caracteres",
+            maxlength: "No puede superar los 50 caracteres"
+         }
+
+       }
+
+    });
+   });
+
+</script>
+
+</head>
+<body>
+	<header id="veg">
+		VEGGIE PIZZAS S.A.
+	</header>
+	<nav>
+      <ul>
+         <li><a href="index.html">Inicio</a></li>
+         <li><a href="about.html">Acerca De Veggie Pizzas</a></li>
+         <li><a href="productos.html">Variedades</a></li>
+            <li><a href="contacto.html">¡Pida Aquí!</a></li>
+      </ul>
+   </nav>
+	<section>
+	  <div class="contenido">
+         <div class="content-form">
+         	
+         	<form action="mensaje.html" method="post" name= "form">  
+         	  <h3>Escríbenos y tendrás tu Veggie Pizza</h3>
+         	  <p class="text-danger" style="margin-top: 15px">* Campos obligatorios</p> 
+         		<div class="form-group">
+         		 <label>Nombre <span class="text-danger">*</span></label>
+         		 <input type="text" name="nombre" placeholder="Ingrese su nombre" class="form-control" required>	
+         		</div>
+         		<div class="form-group">
+         		 <label>Email<span class="text-danger">*</span></label>
+         		 <input type="email" name="email" placeholder="Ingrese su correo electrónico" class="form-control" required>	
+         		</div>
+               <div class="form-group">
+                <label>Número de contacto<span class="form-control"></span></label>
+                <input type="number" name="numero" placeholder="Ejemplo: 987654321" class="form-control" required> 
+               </div>
+               <div class="form-group">
+                <label>Fecha de nacimiento</label>
+                <input type="date" name="fecha" placeholder="Ingrese su fecha de nacimiento" class="form-control" required>       
+               </div>
+         		<div class="form-group">
+         		 <label>Comuna de residencia<span class="text-danger">*</span></label>
+         		 <select name="comuna"class="form-control">
+         		   	<option value="">Seleccione...</option>
+         		   	<option value="stgo">Santiago</option>
+         		   	<option value="ecentral">Estación Central</option>
+         		 	  <option value="lflor">La Florida</option>
+         		   	<option value="lcondes">Las Condes</option>
+         		   	<option value="smiguel">San Miguel</option>
+                <option value="prado">Lo Prado</option>
+                <option value="reina">La Reina</option>
+                <option value="palto">Puente Alto</option>
+                <option value="maipu">Maipú</option>
+                <option value="qnormal">Quinta Normal</option>
+                <option value="cerri">Cerrillos</option>
+                <option value="cisterna">La Cisterna</option>
+                <option value="bosque">El Bosque</option>
+                <option value="puda">Pudahuel</option>
+                <option value="provi">Providencia</option>
+                <option value="renca">Renca</option>
+         		 </select> 	
+         		</div>
+                <div class="form-group">
+                <label>Producto<span class="text-danger">*</span></label>
+                <select name="producto"class="form-control">
+                  <option value="">Seleccione...</option>
+                  <option value="ba1">Pizza Básica 1</option>
+                  <option value="ba2">Pizza Básica 2</option>
+                  <option value="ba3">Pizza Básica 3</option>
+                  <option value="ba4">Pizza Básica 4</option>
+                  <option value="ba5">Pizza Básica 5</option>
+                  <option value="pi">Pizza Pimientos</option>
+                  <option value="cua">Pizza Cuadrada</option>
+                  <option value="vecua">Pizza Verde Cuadrada</option>
+                  <option value="ve1">Pizza Verde 1</option>
+                  <option value="ve2">Pizza Verde 2</option>
+                  <option value="ve3">Pizza Verde 3</option>
+                  <option value="ve4">Pizza Verde 4</option>              
+                </select>  
+               </div>
+         		<div class="form-group">
+         			<label>Pedido<span class="text-danger">*</span></label>
+         			<textarea name="comentarios" placeholder="Ingrese la descripción de su pedido aquí" class="form-control" rows="6" required></textarea>
+         		</div>
+               <div class="form-group">
+         			 <input type="submit" value="Enviar">
+
+         		</div>	
+         	</form>        	
+          </div> 	
+        </div>	    	
+	</section>
+<footer>
+       <p class="text-footer">
+         986463768/ 223947563;
+       
+         Huerfanos 1400, Santiago de Chile;
+     
+         &copy;&#x1F355;Veggie Pizzas- 2020
+       </p>
+</footer>
+</body>
+</html>
